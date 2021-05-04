@@ -20,11 +20,11 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .target(
             name: "VerifoneSDK",
-            path: "VerifoneSDK/Sources",
-            dependencies: []),
+            dependencies: [],
+            path: "VerifoneSDK/Sources"),
         .testTarget(
             name: "VerifoneSDKTests",
-            path: "VerifoneSDK/Tests",
-            dependencies: ["VerifoneSDK"]),
+            dependencies: ["VerifoneSDK"],
+            path: "VerifoneSDK/Tests"),
     ]
 )
